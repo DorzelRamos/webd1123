@@ -1,3 +1,4 @@
+gsap.registerPlugin(ScrollTrigger);
 const container1 = document.getElementById("container1");
 const container2 = document.getElementById("container2");
 //const container = document.querySelectorAll("meta");
