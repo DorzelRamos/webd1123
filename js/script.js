@@ -6,7 +6,9 @@ const container2 = document.getElementById("container2");
 //I like pizza
 
 let tl1 = gsap.timeline();
-    tl1.from(container1, {
+    tl1.from(
+        container1, 
+        {
         autoAlpha: 0,
          duration: 3
         }
@@ -21,13 +23,20 @@ let tl2 = gsap.timeline({
             endColor: "green",
             fontSize: "18px", 
             fontWeight: "bold",
-            indent: 28
-        }
+            indent: 20
+        },
+        scrub:true
     }
 });
     tl2.fromTo(
-        container2
-    )
+        container2,
     {
         //from state
         autoAlpha: 0,
+    },
+    {
+        //to state
+        autoAlpha: 1,
+        duration: 3
+    }
+    )
